@@ -4,7 +4,7 @@ const initialState = {
   locations: [],
 };
 
-export default function (state = initialState, action) {
+export default function reducer(state = initialState, action) {
   if ((action.type = ADD_LOCATION && action.location)) {
     state.locations = [...state.locations, action.location];
   }
