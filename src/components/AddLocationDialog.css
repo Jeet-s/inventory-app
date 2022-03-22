@@ -1,0 +1,62 @@
+.dialog-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.location-dialog .MuiBackdrop-root {
+  background-color: transparent;
+}
+
+.location-dialog .MuiPaper-root {
+  height: 380px;
+  width: 330px;
+  box-shadow: 0 2px 10px RGBA(0, 0, 0, 0.36);
+}
+
+.location-dialog .MuiDialogTitle-root {
+  text-align: center;
+  border-bottom: 1px solid #d8d8d8;
+  font-size: 16px;
+  letter-spacing: 0.48px;
+  font-weight: 600;
+  color: #292929;
+}
+
+.location-dialog .form-control {
+  width: 248px;
+}
+
+.location-dialog .form-control {
+  margin-top: 40px;
+}
+
+.location-dialog .form-control .MuiPaper-root {
+  max-height: 200px;
+}
+
+.location-dialog .form-control .MuiOutlinedInput-root {
+  border-radius: 20px;
+  height: 38px;
+}
+
+.location-dialog .form-control .MuiInputLabel-root:not(.MuiInputLabel-shrink) {
+  top: -8px;
+}
+
+.location-dialog .form-control .MuiSvgIcon-root {
+  fill: black;
+}
+
+.location-dialog .add-button {
+  background-color: black !important;
+  color: white;
+  height: 34px;
+  width: 140px;
+  font-size: 14px;
+  font-weight: 500px;
+  letter-spacing: 0.39px;
+  border-radius: 17px;
+  margin-top: 62px;
+}

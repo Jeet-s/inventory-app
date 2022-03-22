@@ -1,0 +1,72 @@
+.locations-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.locations-container .add-button {
+  margin-top: 8px;
+  background-color: white !important;
+  border: 1px solid RGBA(0, 0, 0, 0.19);
+  box-shadow: none !important;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #000000;
+  margin-left: auto;
+  clear: left;
+}
+
+.locations-container .add-button span {
+  margin-left: 2px;
+}
+
+.locations-container .table-container {
+  box-shadow: none;
+  border-radius: 0px;
+}
+
+.locations-container .table {
+  margin-top: 44px;
+  width: 100%;
+}
+
+.locations-container .table-container td,
+.locations-container .table-container th {
+  border: none;
+  padding: 14px 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: #292929;
+  width: 132px;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.locations-container .table-container td:nth-child(4),
+.locations-container .table-container th:nth-child(4) {
+  width: 40px;
+}
+
+.locations-container .table-container td:nth-child(5),
+.locations-container .table-container th:nth-child(5) {
+  width: 40%;
+}
+
+.locations-container .table-container th {
+  padding: 10px 0;
+  font-weight: 400;
+  text-align: start;
+  white-space: nowrap;
+}
+
+.locations-container .table-container th:nth-child(4) {
+  text-align: center;
+}
+
+.locations-container .edit-button {
+  font-size: 12px;
+  font-weight: 600;
+  color: #292929;
+  text-transform: capitalize;
+  padding: 2px initial;
+}

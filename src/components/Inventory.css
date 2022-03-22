@@ -1,0 +1,40 @@
+.inventory-container {
+  padding: 60px 108px 60px 94px;
+}
+
+.inventory-container__title {
+  font-weight: 500;
+  font-size: 30px;
+  letter-spacing: 0.58px;
+}
+
+.inventory-container__tabs {
+  margin-top: 54px;
+}
+
+.inventory-container__tabs,
+.inventory-container__tabs .MuiTabs-scroller {
+  overflow: visible !important;
+}
+
+.inventory-container__tabs {
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.inventory-container__tabs .MuiTab-root {
+  padding-left: 0;
+  min-width: 132px;
+  align-items: start;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  color: #292929;
+  font-weight: 500;
+}
+
+.inventory-container__tabs .MuiTabs-indicator {
+  width: 25px !important;
+  height: 3px;
+  border-radius: 1.5px;
+  background-color: #5d57f4;
+  bottom: -2px;
+}
