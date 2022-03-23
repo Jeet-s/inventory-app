@@ -34,6 +34,7 @@
 
 .location-dialog .form-control .MuiPaper-root {
   max-height: 200px;
+  border-radius: 25px !important;
 }
 
 .location-dialog .form-control .MuiOutlinedInput-root {
@@ -55,8 +56,8 @@
   height: 34px;
   width: 140px;
   font-size: 14px;
-  font-weight: 500px;
+  font-weight: 500;
   letter-spacing: 0.39px;
-  border-radius: 17px;
+  border-radius: 25px;
   margin-top: 62px;
 }

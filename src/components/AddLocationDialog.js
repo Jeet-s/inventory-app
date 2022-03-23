@@ -68,10 +68,27 @@ export default function AddLocationDialog(props) {
             name="region"
             onBlur={locationForm.handleBlur}
             value={locationForm.values.region}
-            MenuProps={{ PaperProps: { sx: { maxHeight: 280 } } }}
+            MenuProps={{
+              PaperProps: {
+                sx: {
+                  maxHeight: 280,
+                  maxWidth: 260,
+                  borderRadius: "16px",
+                  padding: "8px",
+                  boxShadow: "0 1px 6px RGBA(0, 0, 0, 0.36)",
+                },
+              },
+            }}
           >
             {regions.map((r) => (
-              <MenuItem key={r} value={r}>
+              <MenuItem
+                sx={{
+                  borderRadius: "8px",
+                  margin: "2px 0",
+                }}
+                key={r}
+                value={r}
+              >
                 {r}
               </MenuItem>
             ))}
@@ -91,13 +108,38 @@ export default function AddLocationDialog(props) {
             name="country"
             onBlur={locationForm.handleBlur}
             value={locationForm.values.country}
-            MenuProps={{ PaperProps: { sx: { maxHeight: 280 } } }}
+            MenuProps={{
+              PaperProps: {
+                sx: {
+                  maxHeight: 280,
+                  maxWidth: 260,
+                  borderRadius: "16px",
+                  padding: "8px",
+                  boxShadow: "0 1px 6px RGBA(0, 0, 0, 0.36)",
+                },
+              },
+            }}
           >
             {!countriesList?.length && (
-              <MenuItem disabled>{blankCountriesMessage}</MenuItem>
+              <MenuItem
+                sx={{
+                  borderRadius: "8px",
+                  margin: "2px 0",
+                }}
+                disabled
+              >
+                {blankCountriesMessage}
+              </MenuItem>
             )}
             {countriesList.map((c) => (
-              <MenuItem key={c.key} value={c}>
+              <MenuItem
+                sx={{
+                  borderRadius: "8px",
+                  margin: "2px 0",
+                }}
+                key={c.key}
+                value={c}
+              >
                 {c.name}
               </MenuItem>
             ))}
