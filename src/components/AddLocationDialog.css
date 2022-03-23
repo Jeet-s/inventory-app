@@ -40,10 +40,21 @@
 .location-dialog .form-control .MuiOutlinedInput-root {
   border-radius: 20px;
   height: 38px;
+  border-color: #979797;
+  font-size: 12px;
 }
 
 .location-dialog .form-control .MuiInputLabel-root:not(.MuiInputLabel-shrink) {
-  top: -8px;
+  top: -6px;
+  font-size: 12px;
+  letter-spacing: 0.37px;
+  color: #bbb9b9;
+  font-weight: 500px;
+}
+
+.location-dialog .form-control .MuiInputLabel-root.MuiInputLabel-shrink {
+  font-size: 12px;
+  top: 2px;
 }
 
 .location-dialog .form-control .MuiSvgIcon-root {

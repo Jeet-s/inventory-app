@@ -15,6 +15,20 @@ import "./AddLocationDialog.css";
 
 const regions = ["Africa", "Americas", "Asia", "Europe", "Oceania"];
 
+const styles = {
+  selectPaper: {
+    maxHeight: 280,
+    maxWidth: 260,
+    borderRadius: "16px",
+    padding: "8px",
+    boxShadow: "0 1px 6px RGBA(0, 0, 0, 0.36)",
+  },
+  selectMenuItem: {
+    borderRadius: "8px",
+    margin: "2px 0",
+  },
+};
+
 export default function AddLocationDialog(props) {
   const { onClose, open } = props;
   const [countriesList, setCountriesList] = React.useState([]);
@@ -70,25 +84,12 @@ export default function AddLocationDialog(props) {
             value={locationForm.values.region}
             MenuProps={{
               PaperProps: {
-                sx: {
-                  maxHeight: 280,
-                  maxWidth: 260,
-                  borderRadius: "16px",
-                  padding: "8px",
-                  boxShadow: "0 1px 6px RGBA(0, 0, 0, 0.36)",
-                },
+                sx: styles.selectPaper,
               },
             }}
           >
             {regions.map((r) => (
-              <MenuItem
-                sx={{
-                  borderRadius: "8px",
-                  margin: "2px 0",
-                }}
-                key={r}
-                value={r}
-              >
+              <MenuItem sx={styles.selectMenuItem} key={r} value={r}>
                 {r}
               </MenuItem>
             ))}
@@ -110,36 +111,17 @@ export default function AddLocationDialog(props) {
             value={locationForm.values.country}
             MenuProps={{
               PaperProps: {
-                sx: {
-                  maxHeight: 280,
-                  maxWidth: 260,
-                  borderRadius: "16px",
-                  padding: "8px",
-                  boxShadow: "0 1px 6px RGBA(0, 0, 0, 0.36)",
-                },
+                sx: styles.selectPaper,
               },
             }}
           >
             {!countriesList?.length && (
-              <MenuItem
-                sx={{
-                  borderRadius: "8px",
-                  margin: "2px 0",
-                }}
-                disabled
-              >
+              <MenuItem sx={styles.selectMenuItem} disabled>
                 {blankCountriesMessage}
               </MenuItem>
             )}
             {countriesList.map((c) => (
-              <MenuItem
-                sx={{
-                  borderRadius: "8px",
-                  margin: "2px 0",
-                }}
-                key={c.key}
-                value={c}
-              >
+              <MenuItem sx={styles.selectMenuItem} key={c.key} value={c}>
                 {c.name}
               </MenuItem>
             ))}
